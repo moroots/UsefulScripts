@@ -149,11 +149,11 @@ class pandonia:
             if 'filter_by_date' in par and date_start !=None:
                 if date_start & date_stop:
                     for i in name:
-                        uL[name] = pandonia.flt_by_date(uL[name], date_start, date_stop)
+                        uL[i] = pandonia.flt_by_date(uL[i], date_start, date_stop)
             if 'plot' in par:
                 if 'filter_on' in par: flt='on'
                 for i in name:
-                    uL[name] = pandonia.plot(uL[name], flt=flt)
+                    uL[i] = pandonia.plot(uL[i], flt=flt)
 
         return uL, uL_head, name
 
