@@ -4,10 +4,7 @@
 
 git add .
 
-read commit_message
-
-echo -e "please provide a commit message \n"
-git commit -m $commit_message
+git commit
 
 git push
 
